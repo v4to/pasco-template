@@ -1,0 +1,19 @@
+.hero {
+  background-image:  url("/img/header-hero.jpg");
+  background-repeat: no-repeat;
+  background-size:   cover;
+  position:          relative;
+  height:            800px;
+}
+
+.hero::before {
+  content:          '';
+  display:          block;
+  position:         absolute;
+  background-color: #212121;
+  top:              0;
+  bottom:           0;
+  right:            0;
+  left:             0;
+  opacity:          0.87;
+}
