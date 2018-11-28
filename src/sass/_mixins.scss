@@ -51,7 +51,7 @@ $root-context: 16;
 }
 
 @mixin bMobile() {
-  @media (min-width: 320px) {
+  @media (max-width: 375px) {
     @content;
   }
 }
