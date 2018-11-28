@@ -1,4 +1,60 @@
 .user-list {
-  width:            50%;
-  background-color: aqua;
+  display:       flex;
+  padding-right: 16px;
+  position:      relative;
+  margin-right:  15px;
+}
+
+.user-list::after {
+  content:          '';
+  position:         absolute;
+  display:          block;
+  width:            1px;
+  height:           20px;
+  right:            0;
+  top:              calc(50% - 10px);
+  background-color: $headerSocials;
+}
+
+
+.user-list__item a {
+  display:         flex;
+  align-items:     center;
+  padding-top:     13px;
+  padding-bottom:  13px;
+  color:           $headerSocials;
+  text-decoration: none;
+  text-transform:  uppercase;
+  font-size:       12px;
+  transition:      color .3s;
+
+  &:hover {
+    color: white;
+  }
+
+  &:hover .user-list__icon {
+    fill: white;
+  }
+}
+
+.user-list__icon {
+  margin-right: 7px;
+  fill:         $headerSocials;
+  transition:   fill .3s;
+}
+
+@include bMobile {
+  .user-list {
+    order:         2;
+    margin:        0;
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .user-list__item a {
+    font-size: 16px;
+  }
 }

@@ -1,4 +1,29 @@
 .social-list {
-  width:      50%;
-  background: #3f51b5;
+  width:   50%;
+  display: flex;
+}
+
+.social-list__item a {
+  display:        block;
+  padding-top:    13px;
+  padding-bottom: 13px;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 10px;
+}
+
+.social-list__icon {
+  fill:       $headerSocials;
+  transition: fill .3s;
+}
+
+.social-list__item a:hover .social-list__icon {
+  fill: white;
+}
+
+@include bMobile {
+  .social-list {
+    display: none;
+  }
 }
