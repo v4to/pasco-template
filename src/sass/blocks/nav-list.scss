@@ -1,0 +1,32 @@
+.nav-list {
+}
+
+.nav-list a {
+  padding:         28.6px 20px 23.6px 15px;
+  display:         block;
+  text-decoration: none;
+  text-transform:  uppercase;
+  @include montserratBold;
+  color:           white;
+  position:        relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.nav-list__item--active {
+  border-bottom: 5px solid #ff3f81;
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 15px;
+}
+
+.nav-list__icon {
+  position:  absolute;
+  top:       50%;
+  right:     0;
+  transform: translate(0, -50%);
+  fill:      white;
+}

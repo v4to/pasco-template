@@ -3,5 +3,12 @@
   margin:           0 auto;
   background-color: blueviolet;
   display:          flex;
+  position:         relative;
   justify-content:  space-between;
+  //padding-top:      25px;
+  //padding-bottom:   30px;
+}
+
+.main-nav__list {
+  display: flex;
 }
