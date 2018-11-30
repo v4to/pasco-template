@@ -1,0 +1,32 @@
+.shop-list {
+  display: flex;
+}
+
+.shop-list__item a {
+  padding-top:    28px;
+  padding-bottom: 25px;
+  display:        block;
+  padding-left:   15px;
+  padding-right:  15px;
+  position:       relative;
+
+  &::after {
+    content:          '';
+    position:         absolute;
+    display:          block;
+    width:            1px;
+    height:           30px;
+    right:            0;
+    top:              calc(50% - 15px);
+    background-color: rgba(255, 255, 255, 0.38);
+  }
+
+}
+
+.show-list__icon {
+  fill: white;
+}
+
+.shop-list__item:last-child a::after {
+  display: none;
+}
