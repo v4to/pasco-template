@@ -1,0 +1,12 @@
+.button {
+  padding:          12px 25px;
+  background-color: $button;
+  @include montserratRegular;
+  font-size:        14px;
+  text-transform:   uppercase;
+  display:          inline-block;
+  color:            white;
+  text-decoration:  none;
+  border-radius:    22px;
+  box-shadow:       0 17px 24px 0 rgba(48, 63, 159, .2);
+}

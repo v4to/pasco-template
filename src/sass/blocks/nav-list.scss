@@ -2,7 +2,11 @@
   display: flex;
 }
 
-.nav-list a {
+.main-nav__nav-list {
+  margin-left: 115px;
+}
+
+.nav-list__item a {
   padding:         28.6px 20px 29.6px 15px;
   display:         block;
   text-decoration: none;
