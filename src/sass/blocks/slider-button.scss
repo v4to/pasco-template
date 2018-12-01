@@ -1,3 +1,9 @@
 .slider-button {
   position: absolute;
 }
+
+@include bMobile {
+  .slider-button {
+    display: none;
+  }
+}

@@ -34,3 +34,22 @@
 .shop-list__item:last-child a::after {
   display: none;
 }
+
+@include bMobile {
+  .main-nav__shop-list {
+    margin: 0;
+  }
+  .shop-list__item:not(:last-child) {
+    display: none;
+  }
+
+  .show-list__icon {
+    width:  20px;
+    height: 20px;
+  }
+
+  .shop-list__item a {
+    padding: 0;
+  }
+}
+

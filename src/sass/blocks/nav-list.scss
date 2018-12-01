@@ -35,3 +35,9 @@
   transform: translate(0, -50%);
   fill:      white;
 }
+
+@include bMobile {
+  .nav-list {
+    display: none;
+  }
+}

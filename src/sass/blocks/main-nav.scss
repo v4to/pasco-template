@@ -5,3 +5,42 @@
   margin:    0 auto 200px;
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
+@include bMobile {
+  .main-nav__toggle {
+    display:            block;
+    -webkit-appearance: none;
+    width:              18px;
+    height:             13px;
+    border:             none;
+    background-color:   initial;
+    // Because ios safari adds extra padding for button
+    padding:            0;
+    position:           relative;
+
+
+    &:before {
+      content:    "";
+      display:    block;
+      position:   absolute;
+      background: white;
+      height:     2px;
+      right:      0;
+      left:       0;
+      top:        0;
+      box-shadow: 0 5px 0 0 #ffffff, 0 10px 0 0 #ffffff;
+    }
+
+  }
+  .main-nav {
+    justify-content: space-between;
+    width:           100%;
+    align-items:     center;
+    margin:          0;
+  }
+}
+
+

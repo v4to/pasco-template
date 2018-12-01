@@ -17,3 +17,20 @@
   left:             0;
   opacity:          0.87;
 }
+
+@include bMobile {
+  .hero {
+    padding-left:     15px;
+    padding-right:    15px;
+    background-image: none;
+    background-color: #3e51b4;
+    height:           70px;
+    display:          flex;
+
+    &::before {
+      display: none;
+    }
+  }
+
+
+}

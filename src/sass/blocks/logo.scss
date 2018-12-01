@@ -5,3 +5,9 @@
   font-size:      24px;
   @include montserratBold;
 }
+
+@include bMobile {
+  .logo {
+    padding: 0;
+  }
+}

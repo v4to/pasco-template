@@ -25,7 +25,7 @@
 
 .post-preview__author-link {
   text-decoration: none;
-  @include montserratBold
+  @include montserratBold;
   font-size:       14px;
   color:           white;
   display:         block;
@@ -74,5 +74,10 @@
 .post-preview__icon {
   fill:       $comments;
   transition: fill .3s;
+}
 
+@include bMobile {
+  .post-preview {
+    display: none;
+  }
 }
