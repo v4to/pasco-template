@@ -15,6 +15,7 @@
 .post-preview__title {
   @include montserratBlack;
   font-size:      42px;
+  color:          white;
   text-transform: uppercase;
   margin-bottom:  35px;
 }
@@ -53,6 +54,7 @@
 .post-preview__comments,
 .post-preview__likes {
   text-decoration: none;
+
   color:           $comments;
   font-size:       12px;
   @include montserratRegular;
