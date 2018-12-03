@@ -36,8 +36,29 @@
   fill:      white;
 }
 
+@include bTablet {
+  .main-nav__nav-list {
+    margin-left: auto;
+  }
+}
+
+@include bTabletPortrait {
+  .nav-list__item:last-child,
+  .nav-list__item:nth-child(2) {
+    display: none;
+  }
+}
+
+@include bCustom(640) {
+  .nav-list {
+    display: none;
+  }
+}
+
 @include bMobile {
   .nav-list {
     display: none;
   }
 }
+
+

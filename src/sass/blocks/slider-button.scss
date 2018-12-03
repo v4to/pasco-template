@@ -1,5 +1,31 @@
 .slider-button {
-  position: absolute;
+  position:         absolute;
+  background-color: initial;
+  border:           none;
+  padding:          0;
+  line-height:      0;
+  cursor:           pointer;
+  z-index:          1;
+
+  &--left {
+    top:  calc(50% - 21px);
+    left: 45px;
+  }
+
+  &--right {
+    top:   calc(50% - 21px);
+    right: 45px;
+  }
+}
+
+.slider-button__icon {
+  fill: white;
+}
+
+@include bTabletPortrait {
+  .slider-button {
+    display: none;
+  }
 }
 
 @include bMobile {

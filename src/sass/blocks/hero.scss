@@ -20,8 +20,6 @@
 
 @include bMobile {
   .hero {
-    padding-left:     15px;
-    padding-right:    15px;
     background-image: none;
     background-color: #3e51b4;
     height:           70px;
@@ -31,6 +29,11 @@
       display: none;
     }
   }
+}
 
-
+@include bTablet {
+  .hero {
+    padding-left:  15px;
+    padding-right: 15px;
+  }
 }

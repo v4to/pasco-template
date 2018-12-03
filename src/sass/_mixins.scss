@@ -51,19 +51,31 @@ $root-context: 16;
 }
 
 @mixin bMobile() {
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
+    @content;
+  }
+}
+
+@mixin bTabletPortrait() {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
 @mixin bTablet() {
-  @media (min-width: 760px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin bDesktop() {
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin bCustom($width) {
+  @media (max-width: $width + 0px) {
     @content;
   }
 }

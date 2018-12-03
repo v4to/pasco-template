@@ -35,12 +35,22 @@
   display: none;
 }
 
+@include bTablet {
+  .shop-list__item:nth-child(2) {
+    display: none;
+  }
+
+  .shop-list {
+    display: none;
+  }
+}
+
 @include bMobile {
   .main-nav__shop-list {
     margin: 0;
   }
   .shop-list__item:not(:last-child) {
-    display: none;
+    //display: none;
   }
 
   .show-list__icon {
@@ -52,4 +62,5 @@
     padding: 0;
   }
 }
+
 
