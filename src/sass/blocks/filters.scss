@@ -18,25 +18,16 @@
   margin-left: 20px;
 }
 
-.filter-list {
-  display: flex;
-}
-
-.filter-list__item {
-  padding:          12px 27px;
-  background-color: #f5f5f5;
-  border-radius:    15px;
-  cursor:           pointer;
-  font-size:        12px;
-  @include montserratRegular;
-
-  &--active {
-    background-color: white;
-    border: 1px solid $blue;
-    color: $blue;
+@include bTabletPortrait {
+  .filters {
+    padding-right: 15px;
+    padding-left:  15px;
   }
-}
 
-.filter-list__item + .filter-list__item {
-  margin-left: 15px;
+  .filters__wrapper {
+    font-size:      0;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    position:       relative;
+  }
 }

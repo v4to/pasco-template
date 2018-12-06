@@ -1,0 +1,29 @@
+.filter-list {
+  display:   flex;
+  flex-wrap: wrap;
+}
+
+.filter-list__item {
+  padding:          12px 27px;
+  background-color: #f5f5f5;
+  border-radius:    15px;
+  cursor:           pointer;
+  font-size:        12px;
+  @include montserratRegular;
+
+  &--active {
+    background-color: white;
+    border:           1px solid $blue;
+    color:            $blue;
+  }
+}
+
+.filter-list__item + .filter-list__item {
+  margin-left: 15px;
+}
+
+@include bMobile {
+  .filter-list {
+    display: none;
+  }
+}
