@@ -18,12 +18,14 @@
   margin-left: 20px;
 }
 
-@include bTabletPortrait {
+@include bTablet{
   .filters {
     padding-right: 15px;
     padding-left:  15px;
   }
+}
 
+@include bMobile {
   .filters__wrapper {
     font-size:      0;
     padding-top:    10px;
